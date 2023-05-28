@@ -1,0 +1,23 @@
+.TodoItem{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    display: flex;
+    margin: 5px auto;
+    width: 90%;
+    justify-content: space-between;
+    background-color: #F8F6F4;
+    box-shadow: 1px 1px 10px #C4DFDF;
+    padding: 10px;
+}
+.btn{
+    align-self: center;
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 25px;
+    filter: grayscale(1);
+}
+.btn-delete:hover{
+    filter: grayscale(0);
+    transition: all 0.2s ease;
+}

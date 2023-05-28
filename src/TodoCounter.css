@@ -1,0 +1,11 @@
+.ctn-counter{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    font-size: 14px;
+    background-color: #C4DFDF;
+    color: #F8F6F4;
+    text-align: center;
+    padding: 20px;
+  }
+  
