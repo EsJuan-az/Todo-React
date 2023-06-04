@@ -13,3 +13,9 @@
     font-weight: bold;
     cursor: pointer;
 }
+.create-button-blocked{
+    cursor:not-allowed;
+    background-color: #9bb4b4;
+    color: #F8F6F4;
+    text-shadow: 0px 0px 5px #F8F6F4;
+}

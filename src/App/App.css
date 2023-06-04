@@ -24,14 +24,19 @@
   height: auto;
 }
 .ctn-todocreate{
+    align-self: center;
     width: 30%;
+    transition: all 1s;
 }
 .ctn-todoshow{
     width: 50%;
 }
 .create-todo{
-  padding: 15px;
+  width: 100%;
   display: flex;
+  padding: 35px 0px;
+
+
   justify-content: center;
 }
 input[type="text"]{
@@ -47,4 +52,21 @@ input[type="text"]{
 }
 input[type="text"]::placeholder{
   color: #F8F6F4;
+}
+@media( max-width: 800px ){
+  .ctn-main{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  .ctn-main>*{
+    margin-top: 20px;
+    width: 75%;
+  }
+}
+@media( max-width: 500px ){
+  .ctn-main>*{
+    margin-top: 20px;
+    width: 100%;
+  }
 }

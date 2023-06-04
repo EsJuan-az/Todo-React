@@ -5,9 +5,16 @@
     margin: 5px auto;
     width: 90%;
     justify-content: space-between;
+    align-items: center;
     background-color: #F8F6F4;
-    box-shadow: 1px 1px 10px #C4DFDF;
+    box-shadow: 1px 1px 10px #a8bebe;
     padding: 10px;
+}
+.todo-text{
+    color:#333;
+}
+.todo-text-completed{
+    text-decoration: line-through #333;
 }
 .btn{
     align-self: center;
@@ -15,9 +22,20 @@
     display: block;
     width: 25px;
     height: 25px;
-    filter: grayscale(1);
+}
+.btn-check{
+    color:#a8bebe;
+}
+.btn-check:hover{
+    color:#19A7CE;
+}
+.btn-check-active{
+    color:rgb(7, 134, 7);
+}
+.btn-delete{
+    color:#a8bebe;
 }
 .btn-delete:hover{
-    filter: grayscale(0);
+    color:tomato;
     transition: all 0.2s ease;
 }

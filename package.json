@@ -2,8 +2,14 @@
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
+    "@chakra-ui/react": "^2.7.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.12.16",
+    "random": "^4.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.9.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
