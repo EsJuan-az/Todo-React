@@ -7,7 +7,6 @@ import { TodoProvider } from "../TodoContext";
 
 // 2. Extend the theme to include custom colors, fonts, etc
 function App() {
-
   return (
     <ChakraProvider resetCSS={false}>
       <TodoProvider>

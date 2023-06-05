@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Aller;
+    src: url(./aller.woff2);
+}
+@font-face {
+    font-family: Riffic;
+    src: url(./riffic.woff2);
+}
+.mon{
+    width: 617px;
+    display: block;
+    align-self: flex-end;
+}
+.mon-staring{
+    width:1000px;
+    justify-self: center;
+}
+.MonikaScreen{
+    width: 100%;
+}
+
+.dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Aller;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px -3px 4px #33333370;
+    height: 120px;
+    border: #fddfeb 3px solid;
+    border-radius: 10px;
+    background: linear-gradient(#feadce, #feadcd96);
+}
+.icon-continue{
+    color: white;
+    justify-self: flex-end;
+}
+.dialog-options{
+    font-size: 13px;
+    color: #83495e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dialog-space{
+    align-self: center;
+    width: 75%;
+}
+.mon-tag{
+    margin-left: 20px;
+    display: block;
+    font-family: Riffic;
+    font-size:25px;
+    color: white;
+    text-shadow: -2px 2px 0 #b94b86,
+                  2px 2px 0 #b94b86,
+                  2px -2px 0 #b94b86,
+                 -2px -2px 0 #b94b86;
+    letter-spacing: 1px;
+    /* text-shadow: 2px 2px 0 #b56ea3; */
+    background: #feecf2;
+    width: 150px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.ctn-dialog{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+}

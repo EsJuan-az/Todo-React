@@ -3,17 +3,20 @@ import { useLocalStorage } from "./useLocalStorage";
 
 const TodoContext = React.createContext();
 function TodoProvider({children}){
-    const {
-        item : todos,
-        setItem : setTodos,
-        loading : todosLoading,
-        error : todosError
-      } = useLocalStorage('TODOS_V1', []);
-      
-      const [searchValue, setSearchValue] = React.useState("");
-      const [createTitle, setCreateTitle] = React.useState("");
-      
-    
+      const {
+          item : todos,
+          setItem : setTodos,
+          loading : todosLoading,
+          error : todosError
+        } = useLocalStorage('TODOS_V1', []);
+        const [searchValue, setSearchValue] = React.useState("");
+        const [createTitle, setCreateTitle] = React.useState("");
+        
+        const [monikaEnabled, setMonika] = React.useState(false);
+        const setMonikaEnabled = (state) => {
+          document.querySelector('#monika').style.display = state ? "flex" : "none";
+          setMonika(state);
+        } 
       const showedTodos = todos.filter((todo) => {
         const todoTitle = todo.title.toLowerCase();
         const searchText = searchValue.toLowerCase();
@@ -42,6 +45,7 @@ function TodoProvider({children}){
     
       const createTodo = () => {
         if(createTitle.length > 0){
+          if(createTitle.toLowerCase().includes("monika")) setMonikaEnabled(true);
           const newTodos = [...todos];
           newTodos.push({
             title: createTitle,
@@ -66,6 +70,8 @@ function TodoProvider({children}){
             deleteTodo,
             todosLoading,
             todosError,
+            monikaEnabled,
+            setMonikaEnabled
         }}>
             {children}
         </TodoContext.Provider>

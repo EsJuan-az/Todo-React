@@ -7,9 +7,10 @@ import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
 import { TodoContext } from "../TodoContext";
 import React from "react";
+import { MonikaScreen } from "../MonikaScreen";
 
 function AppUI(){
-  const {showedTodos, completeTodo, deleteTodo} = React.useContext(TodoContext);
+  const {showedTodos, completeTodo, deleteTodo, monikaEnabled} = React.useContext(TodoContext);
     return (
         <>
           <div className="ctn-main">
@@ -41,8 +42,11 @@ function AppUI(){
     
             </div>
           </div>
+
+          {monikaEnabled ? <MonikaScreen/> : undefined}
         </>
-      );
+
+);
 }
 
 export {
